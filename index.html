@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: rgb(216, 175, 121)
+    }
+    h1{
+        color: coral;
+        background-attachment: fixed;
+        text-align: center;
+    }
+    h2{
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <h1>Esto es un Formulario</h1>
+    <form action="" class="formulario">
+        <h2>El club viejuner</h2>
+        <p>Este club <strong>NO</strong> está hecho para cualquier edad</p>
+        <h3>Información básica</h3>
+        <label for="name">Nombre</label>
+        <input type="text" id="name" name="name" value=""> <br>
+        <br>
+        <label for="lastname">Apellidos</label>
+        <input type="text" id="lastname" name="lastname" value="">
+        <input type="text" id="lastname" name="lastname" value=""> <br>
+        <br>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday"><br>
+        <br>
+        <h3>¿cuál es tu género?</h3>
+        <!-- LISTA DE ELECCIÓN  -->
+        <input type="radio" name="Gender" value="H"> Hombre <br>
+        <input type="radio" name="Gender" value="M"> Mujer <br>
+        <input type="radio" name="Gender" value="NB">No Binario <br>
+        <br>
+        <h3>Cuéntanos</h3>
+        <textarea name="message" rows="20" cols="50">
+            Escribe algo sobre ti.
+        </textarea> <br>
+        <br>
+        <h3>Email</h3>
+        <!-- EMAIL  -->
+        <label for="email"></label>
+        <input type="email" id="email" name="email">
+        <h3>Déja tu teléfono</h3>
+        <label for="phone">Enter a phone number:</label><br><br>
+        <input type="tel" id="phone" name="phone" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+        <input type="submit" value="Enviar">
+    </form>
+    <form action="">
+        <h2>Bicicletas</h2>
+        <!-- FECHA -->
+        <label for="dates">Elige la fecha:</label>
+        <input type="date" id="dates" name="dates"> <br>
+        <br>
+        <!-- HORA  -->
+        <label for="time">Elige la hora:</label>
+        <input type="time" id="time" name="time"> <br>
+        <br>
+        <!-- RANGO  -->
+        <label for="price">Rango de precio min 0€ max 100€</label>
+        <input type="range" list="price">
+        <datalist id="price">
+            <option value="0">
+            <option value="10">
+            <option value="20">
+            <option value="30">
+            <option value="40">
+            <option value="50">
+            <option value="60">
+            <option value="70">
+            <option value="80">
+            <option value="90">
+            <option value="100">
+        </datalist>
+        <br>
+        <br>
+        <!-- LISTA DESPLEGABLE CON SECCIONES EN LISTA  -->
+        <select name="list" id="list">
+           <option value="0">Elige una opción</option>
+                <optgroup label="Paseo">
+                    <option value="1">Señorial</option>
+                    <option value="2">Anti-plebeyos</option>
+                    <option value="3">PorEncimaDelHonbro</option>
+                </optgroup>
+                <optgroup label="Montaña">
+                    <option value="4">Gamusinos</option>
+                    <option value="5">Hueleflores premium</option>
+                    <option value="6">Fango lover</option>
+                </optgroup>
+                <optgroup label="Carreras">
+                    <option value="7">Metroymedio</option>
+                    <option value="8">3 de la tarde. Fluorescente editon</option>
+                    <option value="9">Grupitors</option>
+                </optgroup>
+        </select> <br>
+        <br>
+        <label for="bici">Elige el accesorio :</label>
+        <select name="bici" id="bici" multiple>
+            <option value="Ruedines">Ruedines</option>
+            <option value="Pegatinas">Pegatinas</option>
+            <option value="Cestita">Cestita</option>
+            <option value="Bomba de aire">Bomba de aire</option>
+            <option value="Timbre">Timbre</option>
+            <option value="Foco">Foco</option>
+        </select> <br>
+        <br>
+        <!-- LISTA LARGA DE OPCIONES  -->
+        <label for="marca">Dinos la marca</label>
+        <select name="marca" id="marca">
+            <option value="0">--Elige una opción--</option>
+            <option value="1">Specialized</option>
+            <option value="2">Trek</option>
+            <option value="3">Merida</option>
+            <option value="4">Scott</option>
+            <option value="5">Giant</option>
+            <option value="6">Cube</option>
+            <option value="7">La Pierre</option>
+            <option value="8">Orbea</option>
+            <option value="9">Cannondable</option>
+            <option value="10">BMC</option>
+            <option value="11">Canyon</option>
+            <option value="12">Look</option>
+            <option value="13">Protek</option>
+            <option value="14">Megamo</option>
+            <option value="15">Pinarello</option>
+            <option value="16">Bianchi</option>
+            <option value="17">BH</option>
+            <option value="18">Factor</option>
+            <option value="19">Ghost</option>
+            <option value="20">Cervélo</option>
+            <option value="21">Argon</option>
+        </select>
+    </form>
+</body>
+</html>
